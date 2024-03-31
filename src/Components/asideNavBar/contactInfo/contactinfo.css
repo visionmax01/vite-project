@@ -1,0 +1,112 @@
+.ContactInfoSection{
+    display: flex;
+}
+.containtContact{
+    background-color: transparent;
+    width: 60%;
+    height: max-content;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.PersionalDetailsection h1{
+    font-size: 1.6rem;
+}
+.OverViewSection{
+    margin: auto;
+    height: 350px;
+    background-color: var(--colorBody);
+}
+
+.persionalInfo{
+    height: max-content;
+    padding: 15px 0px;
+    background-color: var(--colorBody);
+    border-radius:0px 8px 8px 8px;
+    box-sizing: border-box;
+}
+
+.UnListDetail{
+    width: 100%;
+    padding: 0px 10px;
+}
+.UnListDetail li{
+    position: relative;
+    width: 100%;
+    margin-bottom: 5px;
+    display: flex;
+
+}
+.UnListDetail li p{
+    font-size: 1.3rem;
+}
+.titleText{
+  position: relative;
+  width: 25%;
+
+
+}
+.listMiddel{
+ width: 5%;
+}
+.listDetail{
+ width: 70%;
+}
+
+
+/*socialmedia links css */
+.socialIcon{
+    background-color: var(--colorBody);
+    border-radius:0px 8px 8px 8px;
+}
+.socialMedia h1{
+    font-size: 1.6rem;
+}
+.socialIcon a i{
+    font-size: 30px;
+    color: var(--colorStrongBlue);
+    padding: 10px 20px;
+    transition: all 0.2s ease-in-out;
+}
+.socialIcon a i:hover{
+    color: var(--colorWhite);
+}
+.WebsiteURL{
+    margin-top: 30px;
+
+}
+.WebsiteURL h1{
+    font-size: 1.6rem;
+}
+.WebsiteInfo{
+    border-radius:0px 8px 8px 8px;
+    padding: 10px 20px;
+    background-color: var(--colorBody);
+}
+.WebsiteInfo a{
+    text-decoration: none;
+    display: flex;
+    color: none;
+    align-items: center;
+    position: relative;
+  
+}
+.WebsiteURL a i:hover{
+    color: red;
+}
+.WebsiteURL a p:hover{
+    color: red;
+}
+.WebsiteURL a i{
+    font-size: 25px;
+    color: rgb(0, 81, 255);
+    margin-right: 15px;
+    transition: all 0.2s ease-in-out;
+}
+.WebsiteURL a p{
+    font-size: 1.3rem;
+    transition: all 0.2s ease-in-out;
+    color: rgb(0, 81, 255);
+}
+

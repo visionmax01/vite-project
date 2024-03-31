@@ -1,0 +1,17 @@
+.btn_Button{
+    background-color:blue;
+    padding: 5px 15px; 
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-style: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 4px;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+
+}
+.btn_Button:hover{
+    background-color: #02225f;
+    color: #ffa200;
+}

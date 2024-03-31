@@ -1,0 +1,104 @@
+.maincontainerResume{
+    width: 85vw;
+    margin:20px auto;
+    border-radius: 15px;
+    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.sideNavBar{
+    position: relative;
+    left: 0;
+    top: 11%;
+    width: 20%;
+    height: 80vh;
+    border-radius: 15px;
+    background-color: var(--colorBlue);
+}
+.displayContent{
+    position: relative;
+    width: 77%;
+    margin: auto;
+    height: 80vh;
+    border-radius: 15px;
+    background-color: var(--colorBlue);
+}
+.profileImage img{
+    width: 85%;
+    margin: auto;
+    border-radius: 15px;
+    position: relative;
+    margin-top: 10px;
+    height: 200px;
+}
+.listItem{
+    position: relative;
+    width: 100%;
+}
+.listItem ul{
+    margin-top: 30px;
+    width: 100%;
+}
+.listItem ul li{
+    width: 100%;
+    text-align: left;
+    list-style-type: none;
+    padding:6px 30px;
+    box-sizing: border-box;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.3rem;
+}
+.listItem ul li:hover{
+    background-color: var(--colorStrongBlue);
+}
+.listItemLink{
+    position: relative;
+    color: var(--colorWhite);
+    text-decoration: none;
+    padding:5px 100% 8px 10px ;
+    box-sizing: border-box;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.listItem ul li.active {
+    background-color: var(--colorStrongBlue);
+  }
+  
+ 
+  .listItem ul li.active .hoverdot1 {
+    width: 25px;
+  height: 25px;
+  background-color: var(--colorStrongBlue);
+  border: 4px solid var(--colorBody);
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 50%;
+  z-index: 10;
+  right: -5%;
+  }
+  .listItem ul li.active .hoverdot2 {
+    width: 25px;
+    height: 25px;
+    border: 4px solid var(--colorBody);
+    box-sizing: border-box;
+    background-color: var(--colorStrongBlue);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 10;
+    right: -18%;
+  }
+  
+  .listItem ul li.active .hoverLine {
+    width: 35px;
+    height: 5px;
+    background-color: var(--colorStrongBlue);
+    position: absolute;
+    z-index: 12;
+    right: -15%;
+  }
+  .PageRendering{
+     padding: 40px;
+    
+  }

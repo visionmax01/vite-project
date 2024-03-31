@@ -1,0 +1,128 @@
+nav {
+    position: fixed;
+    z-index: 1100;
+    box-shadow: 0 1px 4px 1px #ffffff7d;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.699);
+}
+
+.navbarSection {
+    width: 100%;
+    height: max-content;
+    background-color: #000000;
+}
+
+.nav-listUl {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 50px;
+    padding: 0px 30px;
+    box-sizing: border-box;
+}
+
+.nav-listUl li {
+    list-style: none;
+    padding: 10px 0px;
+
+}
+
+.mainLogoGif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: red;
+    margin-left: 25px;
+}
+
+.mainLogoGif img {
+    height: 40px;
+}
+
+
+.NavigationList a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+}
+
+.NavigationList a:hover {
+    color: #ffa200;
+}
+
+.nav-listUl li:first-child {
+    position: absolute;
+    left: 0;
+    justify-content: flex-start;
+}
+
+.MinuIcon {
+    display: none;
+    padding: 0px 10px;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+/* aside menu css*/
+.MenuSideOpen {
+    position: fixed;
+    display: none;
+    top: 53px;
+    right: 0;
+    width: 15vw;
+    height: 100vh;
+    background-color: #023697e7;
+    padding: 25px;
+    box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.979);
+
+}
+
+.MenuSideOpen .mainLogo img {
+    width: 250px;
+    height: 50px;
+}
+
+.nav-listAside li {
+    margin-bottom: 15px;
+    padding: 4px 0px 4px 10px;
+    list-style: none;
+    font-size: 2rem;
+    cursor: pointer;
+    border-radius: 8px;
+}
+
+.nav-listAside li:hover {
+    background-color: rgba(0, 0, 0, 0.911);
+}
+
+.nav-listAside li a {
+    font-size: 1.3rem;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        position: fixed;
+    }
+
+    .nav-listUl {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 50px;
+        padding: 15px 0px;
+        box-sizing: border-box;
+    }
+
+    .nav-listUl li:not(:first-child) {
+        display: none;
+
+    }
+
+    .MinuIcon {
+        display: block;
+        padding: 0px 10px;
+        margin-right: 25px;
+        font-weight: 900;
+        font-size: 20px;
+    }
+}

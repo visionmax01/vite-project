@@ -1,0 +1,13 @@
+.footerSection{
+    display: flex;
+    gap: 50px;
+    padding: 10px 25px;
+    background-color: var(--colorBlack);
+}
+.footerSection a{
+color: Red;
+text-decoration: none;
+}
+.footerSection a:hoVer{
+    color: rgb(255, 136, 0);
+    }
