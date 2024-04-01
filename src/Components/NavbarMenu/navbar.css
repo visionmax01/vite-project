@@ -1,10 +1,35 @@
 nav {
     position: fixed;
     z-index: 1100;
-    box-shadow: 0 1px 4px 1px #ffffff7d;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.699);
 }
-
+    /* aside menu css*/
+    .MenuSideOpen {
+        position: fixed;
+        z-index: 600;
+        top: 8%;
+        left: 0;
+        padding: 15px 0 0 0;
+        display: block;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--colorBlack);
+        transition: transform 0.3s ease;
+        transform: translateX(0);
+        border-right: 1px solid black;
+      }
+      
+      .MenuSideClosed {
+        position: fixed;
+        z-index: 600;
+        top: 8%;
+        left: 0; 
+        padding: 15px 0 0 0;
+        width: 60vw;
+        height: 100vh;
+        background-color: var(--colorBlack);
+        transition: transform 0.3s ease; 
+        transform: translateX(-100%);
+      }
 .navbarSection {
     width: 100%;
     height: max-content;
@@ -58,24 +83,10 @@ nav {
 
 .MinuIcon {
     display: none;
-    padding: 0px 10px;
-    font-weight: 900;
-    font-size: 20px;
 }
 
-/* aside menu css*/
-.MenuSideOpen {
-    position: fixed;
-    display: none;
-    top: 53px;
-    right: 0;
-    width: 15vw;
-    height: 100vh;
-    background-color: #023697e7;
-    padding: 25px;
-    box-shadow: -10px 0px 10px -5px rgba(0, 0, 0, 0.979);
 
-}
+  
 
 .MenuSideOpen .mainLogo img {
     width: 250px;
@@ -84,8 +95,8 @@ nav {
 
 .nav-listAside li {
     margin-bottom: 15px;
-    padding: 4px 0px 4px 10px;
     list-style: none;
+    padding: 4px 0px 4px 25px;
     font-size: 2rem;
     cursor: pointer;
     border-radius: 8px;
@@ -97,6 +108,9 @@ nav {
 
 .nav-listAside li a {
     font-size: 1.3rem;
+}
+.MenuIcon{
+    display: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -118,11 +132,18 @@ nav {
 
     }
 
-    .MinuIcon {
+    .MenuIcon,.CloseIcon {
         display: block;
-        padding: 0px 10px;
+        padding: 2px 12px;
         margin-right: 25px;
         font-weight: 900;
+        color: var(--colorBlack);
         font-size: 20px;
+        border-style: none;
+        border-radius: 4px;
+        background-color: var(--colorStrongBlue);
+
     }
+
+   
 }

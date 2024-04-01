@@ -8,6 +8,7 @@ const ContactInfo = () => {
         <div className="PersionalDetailsection">
           <h1>Persional Detail</h1>
           <div className="persionalInfo">
+            <div className="circleCut circleTop"><div className="insideCircle"></div></div>
             <ul className="UnListDetail">
               <li>
                 <p className="titleText">Name</p>{" "}
@@ -35,6 +36,9 @@ const ContactInfo = () => {
         <div className="socialMedia">
           <h1>Social Media contact</h1>
           <div className="socialIcon">
+          <div className="circleCut circleleft"></div>
+          <div className="circleCut circleright"></div>
+
             <a href="">
               <i className="fa-solid fa-envelope"></i>
             </a>
@@ -55,13 +59,13 @@ const ContactInfo = () => {
         <div className="WebsiteURL">
           <h1>Website URL</h1>
           <div className="WebsiteInfo">
+          <div className="circleCut circleleft"></div>
+          <div className="circleCut circleright"></div>
             <a href="https://www.bhishansah.com.np"><i className="fa-solid fa-globe"></i><p>www.bhishansah.com.np</p></a>
           </div>
         </div>
       </div>
-      {/* <div className="WebsiteURL"></div>
-
-      <div className="OverViewSection"></div> */}
+      <div className="OverViewSection"></div>
     </div>
   );
 };

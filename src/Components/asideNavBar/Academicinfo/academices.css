@@ -1,0 +1,101 @@
+.academicDetail{
+    width: 100%;
+    height: auto;
+    border-left: 2px solid white;
+    margin-top: 25px;
+    font-size: 2rem;
+
+}
+.AcademicDetailsection h1{
+    text-align: left;
+    font-family: "Teko", sans-serif;
+    text-transform: uppercase;
+}
+.pointcircle{
+    position: absolute;
+    top: 0;
+    left: -0.9%;
+    width: 15px;
+    height: 15px;
+    border: 2px solid white;
+    box-sizing: border-box;
+    border-radius: 50%;
+    background-color: #033044;
+}
+.btechDegree{
+    position: relative;
+    display: flex;
+    text-align: left;
+    margin-top: -5px;
+    padding-left: 25px;
+    width: 100%;
+    height: 150px;
+}
+.detailsOverview{
+    position: absolute;
+    top: -2%;
+}
+.btechDegree h2{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-transform: capitalize;
+
+}
+.btechDegree h3{
+    margin-bottom: 10px;
+    font-size: 1rem;
+    margin-left: 10px;
+    font-family: "Lato", sans-serif;
+    text-transform: capitalize;
+    color: #9c81f0;
+
+}
+.btechDegree h3 i{
+    margin-right: 5px;
+}
+.btechDegree p {
+    margin-left: 30px;
+    font-family: "Lato", sans-serif;
+    padding: 5px;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: var(--colorlightWhite);
+    display: flex;
+    align-items: center;
+
+}
+.btechDegree p i {
+    font-size:8px ;
+    margin-right: 5px;
+
+}
+@media screen and (max-width:1250px){
+    .pointcircle{
+        position: absolute;
+        top: 0;
+        left: -1.1%;
+        width: 15px;
+        height: 15px;
+        border: 2px solid white;
+        box-sizing: border-box;
+        border-radius: 50%;
+        background-color: #033044;
+    }
+    .pointcircle,
+    .btechDegree h2,
+    .btechDegree h3,
+    .btechDegree p {
+        font-size: 80%; /* Decrease font size to 50% */
+    }
+
+    .academicDetail {
+        width: 100%;
+        height: auto;
+        border-left: 2px solid white;
+        margin-top: 25px;
+        font-size: 1rem;
+    }
+
+    
+}

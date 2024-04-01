@@ -5,15 +5,14 @@
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: rgb(255, 255, 255);
+    background-color: var(--colorStrongBlue);
     left: 2%;
     bottom: 5%;
-    box-shadow: 0 0 10px 5px rgb(255, 213, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     color: var(--colorBlue);
-    font-size: 25px;
+    font-size: 18px;
     font-weight: 900;
     cursor: pointer;
 }
@@ -39,7 +38,7 @@
     height: 150px;
     background-color: transparent;
     top: 12%;
-    left: -5%;
+    left: -4%;
     border-top: 6px solid blue;
     border-left: 6px solid blue;
 }
@@ -49,7 +48,7 @@
     background-color: transparent;
     position: absolute;
     bottom: 28%;
-    right: 7%;
+    right: 3%;
    border-bottom: 6px solid blue;
    border-right: 6px solid blue;
 }
@@ -97,7 +96,9 @@
 .homeIntro p{
     font-size: 1.3rem;
     margin-bottom: 25px;
-    line-height: 1.7
+    line-height: 1.7;
+    font-family:sans-serif;
+    text-align: justify;
 }
 
 /*section two home */
@@ -108,28 +109,36 @@
     background-color: var(--colorBlue);
     font-family: "Teko", sans-serif;
     padding-top: 30px;
-    padding-bottom: 90px;
+    padding-bottom: 150px;
 }
 /*design section to circle */
-
+.rectangelDiv{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+}
 .sideDesign{
     background-color: var(--colorBody);
     width: 70px;
     height: 70px;
     border-radius: 50%;
     position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     left: 0.3%;
-    top: -8%;
+    top: -30%;
 }
-.childCircleBottom{
-    background-color: var(--colorBody);
-    width: 60px;
-    height: 60px;
+.sideDesign1{
+    background-color: #ffffff;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
+    box-shadow: 0 0 12px 5px white;
     position: absolute;
-    left: 0.3%;
-    bottom: -7%;
 }
+
 .desingContainer{
     width: 10%;
     display: flex;
@@ -151,7 +160,7 @@
     width: 90%;
     height: 30px;
     position: absolute;
-    top: -2.5%;
+    top: -12%;
     display: flex;
     justify-content:center;
     gap: 50px;
@@ -169,7 +178,7 @@
     position: absolute;
     right: 0;
     margin-right: 50px;
-    top: -15%;
+    top: -50%;
     width: 150px;
     height: 150px;
     background-color: var(--colorBody);
@@ -196,17 +205,18 @@
     color:#fff;
     margin-bottom: -15px;
 }
-.ExpertiesList{
+
+.ExpertiesList {
     display: flex;
     flex-wrap: wrap;
-    width: 85vw;
-    height: auto;
     grid-template-columns: repeat(4, 1fr);
-    gap: 50px;
-    align-items: center;
+    gap: 80px;
+    margin-bottom: 20px;
+    width: 75vw;
     padding-top: 30px;
-    padding-bottom: 80px;
-}
+    padding-bottom: 20px;
+  }
+  
 .underLine{
     width: 74vw;
     height: 3px;
@@ -222,7 +232,13 @@
     height: 120px;
     background-color: var(--colorBody);
     border-radius: 8px;
-}
+    opacity: 1; 
+    transition: opacity 0.5s ease-in-out; 
+  }
+  
+  .card-One.fade-up {
+    opacity: 1; 
+  }
 .cardLogo{
     font-size: 30px;
     width: 50px;
@@ -239,6 +255,8 @@
     width: 35px;
     height: 35px;
 }
+
+
 .containtInfo{
     position: absolute;
     bottom: 15%;
@@ -248,9 +266,8 @@
     color: var(--colorlightWhite);
 }
 .containtInfo p{
-    font-size: 1.7rem;
+    font-size: 1.6rem;
     font-weight: 900;
-    letter-spacing: 0.5rem;
 
 }
 .containtInfo span{
@@ -381,40 +398,67 @@
         margin: auto;
         display: flex;
         flex-direction: column;
-        margin-bottom: 50px;
+        margin-bottom: 30px;
       }
       .Secton-OneLeft{
-        width: 100%;
-        margin-top: 100px;
-        padding-right: 0px;
-        display: flex;
-        align-items: center;
-    }
-    .Secton-OneRight {
-        width: 85vw;
-        margin-top: 20px;
-        height: 60vh;
-        box-sizing: border-box;
-    }
-    .Secton-OneRight img{
+          width: 100%;
+          margin-top: 120px;
+          padding-right: 5px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative;
+          box-sizing: border-box;
+      }
+      .Secton-OneRight{
         width: 100%;
         height: 100%;
-        border-radius: 20px;
-    
+        margin-top: 50px;
+      }
+      .Secton-OneRight img{
+         width: 100%;
+         height: 100%;
+         border: none;
+         border-radius: 8px;
+         box-shadow: 0 0 8px 2px white;
+         box-sizing: border-box;
+
+      }
+
+    .designOne{
+        position: absolute;
+        width:100px;
+        height: 100px;
+        background-color: transparent;
+        top: -5%;
+        left: -7%;
+        border-top: 6px solid blue;
+        border-left: 6px solid blue;
+        box-sizing: border-box;
+    }
+    .designTwo{
+        width: 100px;
+        height: 100px;
+        background-color: transparent;
+        position: absolute;
+        bottom: 20%;
+        right: -6.5%;
+       border-bottom: 6px solid blue;
+       border-right: 6px solid blue;
     }
     .homeIntro h1{
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-family: "Teko", sans-serif;
         font-weight: 900;
         color:#fff;
     }
     .homeIntro h4{
-        font-size: 1rem;
+        font-size: 1.3rem;
         margin-bottom: 20px;
         line-height: 1.7
     }
     .homeIntro p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         margin-bottom: 25px;
         line-height: 1.7
     }
@@ -423,11 +467,35 @@
         width: 100%;
         position: relative;
         height: auto;
+        margin-bottom: 20px;
         background-color: var(--colorBlue);
+        border-radius: 25px ;
     }
+    /* sdesign circle*/
+.rectangelDiv{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+}
+.sideDesign{
+    background-color: var(--colorBody);
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
     .skillsSection{
         width: 80vw;
         margin: auto;
+    }
+    .desingContainer{
+        display:none
     }
     .ExpertiesList{
         display: flex;
@@ -438,7 +506,7 @@
         gap: 50px;
         align-items: center;
         padding-top: 30px;
-        padding-bottom: 80px;
+        padding-bottom: 20px;
     }
     .lineDiv{
       display: none;
@@ -451,13 +519,13 @@
     .homeSection-Three{
         width: 100%;
         position: relative;
-        height: 800px;
+        height: 120px;
         background-color: var(--colorBody);
         font-family: "Teko", sans-serif;
     }
   
     .containtTop{
-        top: -9%;
+        top: -135%;
         width: 90%;
         margin: auto;
         position: relative;
@@ -486,5 +554,7 @@
         opacity: 0;
         transition: opacity 0.8s ease-in-out;
       }
-  
+  .contactME{
+    left: 4%;
+  }
 }

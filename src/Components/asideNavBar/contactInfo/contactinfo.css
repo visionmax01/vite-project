@@ -1,5 +1,7 @@
 .ContactInfoSection{
     display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 .containtContact{
     background-color: transparent;
@@ -11,20 +13,47 @@
     flex-wrap: wrap;
 }
 .PersionalDetailsection h1{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
+    color: var(--colorlightWhite);
 }
 .OverViewSection{
+    width: 30%;
+    border-radius: 15px;
     margin: auto;
     height: 350px;
     background-color: var(--colorBody);
 }
 
 .persionalInfo{
+    position: relative;
     height: max-content;
     padding: 15px 0px;
     background-color: var(--colorBody);
     border-radius:0px 8px 8px 8px;
     box-sizing: border-box;
+}
+/*cut design css */
+.circleCut{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-sizing: border-box;
+    background-color: #033044;
+}
+.insideCircle{
+    width: 15px;
+    height: 15px;
+    background-color: yellow;
+    border-radius: 50%;
+}
+.circleTop{
+    right: -4%;
+    border-left: 3px solid yellow;
+    top: 28%;
 }
 
 .UnListDetail{
@@ -44,6 +73,7 @@
 .titleText{
   position: relative;
   width: 25%;
+  color: antiquewhite;
 
 
 }
@@ -52,16 +82,35 @@
 }
 .listDetail{
  width: 70%;
+ color: var(--colorlightWhite);
 }
 
 
 /*socialmedia links css */
 .socialIcon{
+    position: relative;
     background-color: var(--colorBody);
     border-radius:0px 8px 8px 8px;
 }
 .socialMedia h1{
-    font-size: 1.6rem;
+    color: var(--colorlightWhite);
+    font-size: 1.3rem;
+}
+.circleleft{
+    width: 20px;
+    height: 20px;
+    left: -2%;
+    top: 30%;
+    border-right: 3px solid yellow;
+    box-sizing: border-box;
+}
+.circleright{
+    right: -2%;
+    width: 20px;
+    height: 20px;
+    top: 30%;
+    border-left: 3px solid yellow;
+    box-sizing: border-box;
 }
 .socialIcon a i{
     font-size: 30px;
@@ -77,9 +126,10 @@
 
 }
 .WebsiteURL h1{
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 .WebsiteInfo{
+    position: relative;
     border-radius:0px 8px 8px 8px;
     padding: 10px 20px;
     background-color: var(--colorBody);

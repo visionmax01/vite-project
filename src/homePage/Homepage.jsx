@@ -5,6 +5,7 @@ import "./home.css";
 import Typewriter from "typewriter-effect";
 
 const Homepage = () => {
+  const [showAllExpertise, setShowAllExpertise] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     "../src/img/slideimage5.png",
@@ -13,7 +14,17 @@ const Homepage = () => {
     "../src/img/slideimage4.png",
     "../src/img/slideimage1.jpg",
   ];
-
+  const expertiseData = [
+    { name: "HTML", percentage: 90, image: "../src/img/html5.png" },
+    { name: "CSS", percentage: 90, image: "../src/img/css.png" },
+    { name: "React", percentage: 90, image: "../src/img/react.png" },
+    { name: "JavaScript", percentage: 90, image: "../src/img/javascript.png" },
+    { name: "Node Js", percentage: 90, image: "../src/img/nodeJs.png" },
+    { name: "Php", percentage: 90, image: "../src/img/php.png" },
+    { name: "Laravel", percentage: 90, image: "../src/img/laravel.png" },
+    { name: "Express", percentage: 90, image: "../src/img/express.png" },
+    // Add more expertise data as needed
+  ];
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
@@ -30,6 +41,9 @@ const Homepage = () => {
     setCurrentImageIndex((prevIndex) =>
       prevIndex === 0 ? images.length - 1 : prevIndex - 1
     );
+  };
+  const toggleShowAllExpertise = () => {
+    setShowAllExpertise((prev) => !prev);
   };
   return (
     <>
@@ -81,15 +95,10 @@ const Homepage = () => {
       </div>
 
       <div className="homeSection_two">
-        
-        <div className="sideDesign"></div>
-        <div className="desingContainer">
-          <div className="childCircle"></div>
-          <div className="childCircle"></div>
-          <div className="childCircle"></div>
-          <div className="childCircle"></div>
-        </div>
-        <div className="childCircleBottom"></div>
+        <div className="rectangelDiv">
+          <div className="sideDesign">
+            <div className="sideDesign1"></div>
+          </div>
         <div className="lineDiv">
           <div className="smallCircle">
             <i className="fa-solid fa-shield-halved"></i>
@@ -113,103 +122,46 @@ const Homepage = () => {
             <i className="fa-solid fa-shield-halved"></i>
           </div>
         </div>
-        <div className="circleDiv">
-          <img src="../src/img/1684858746747.jpg" alt="" />
+          
+          <div className="circleDiv">
+            <img src="../src/img/1684858746747.jpg" alt="" />
+          </div>
         </div>
-        <div className="skillsSection">
+
+        
+
+        <div className={`skillsSection ${showAllExpertise ? "showAll" : ""}`}>
           <h2>My Expertise</h2>
           <hr className="underLine" />
           <div className="ExpertiesList">
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/html5.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/css.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/react.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/javascript.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <p>EX</p>
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/nodeJs.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/php.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/laravel.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>Laravel</p>
-                <span>80%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/laravel.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
-            <div class="card-One">
-              <div className="cardLogo">
-                <img src="../src/img/laravel.png" alt="" />
-              </div>
-              <div className="containtInfo">
-                <p>HTML</p>
-                <span>90%</span>
-              </div>
-            </div>
+            {showAllExpertise
+              ? expertiseData.map((expertise, index) => (
+                  <div className="card-One" key={index}>
+                    <div className="cardLogo">
+                      <img src={expertise.image} alt="" />
+                    </div>
+                    <div className="containtInfo">
+                      <p>{expertise.name}</p>
+                      <span>{expertise.percentage}%</span>
+                    </div>
+                  </div>
+                ))
+              : expertiseData.slice(0, 4).map((expertise, index) => (
+                  <div className="card-One" key={index}>
+                    <div className="cardLogo">
+                      <img src={expertise.image} alt="" />
+                    </div>
+                    <div className="containtInfo">
+                      <p>{expertise.name}</p>
+                      <span>{expertise.percentage}%</span>
+                    </div>
+                  </div>
+                ))}
+          </div>
+          <div className="buttonContainer">
+            <button className="btn_Button" onClick={toggleShowAllExpertise}>
+              {showAllExpertise ? "Show Less" : "Show More"}
+            </button>
           </div>
         </div>
       </div>

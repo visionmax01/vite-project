@@ -26,8 +26,7 @@ const AsidenavBar = () => {
                 About
               </Link>
               <div className="hoverdot1"></div>
-              <div className="hoverLine"></div>
-              <div className="hoverdot2"></div>
+              <div className="hoverTrangle"></div>
             </li>
             <li className={selectedContent === "Contact" ? "active" : ""}>
               <i className="fa-solid fa-id-card-clip"></i>
@@ -35,8 +34,7 @@ const AsidenavBar = () => {
                 Contact
               </Link>
               <div className="hoverdot1"></div>
-              <div className="hoverLine"></div>
-              <div className="hoverdot2"></div>
+              <div className="hoverTrangle"></div>
             </li>
             <li className={selectedContent === "Academic" ? "active" : ""}>
               <i className="fa-solid fa-user-graduate"></i>
@@ -44,26 +42,23 @@ const AsidenavBar = () => {
                 Academic
               </Link>
               <div className="hoverdot1"></div>
-              <div className="hoverLine"></div>
-              <div className="hoverdot2"></div>
+              <div className="hoverTrangle"></div>
             </li>
             <li className={selectedContent === "Skill" ? "active" : ""}>
-              <i className="fa-solid fa-address-card"></i>
+            <i className="fa-solid fa-person-skiing-nordic"></i>
               <Link className="listItemLink" onClick={() => handleItemClick("Skill")}>
                 Skill
               </Link>
               <div className="hoverdot1"></div>
-              <div className="hoverLine"></div>
-              <div className="hoverdot2"></div>
+              <div className="hoverTrangle"></div>
             </li>
             <li className={selectedContent === "Experiences" ? "active" : ""}>
-              <i className="fa-solid fa-address-card"></i>
+            <i className="fa-solid fa-star"></i>
               <Link className="listItemLink" onClick={() => handleItemClick("Experiences")}>
                 Experiences
               </Link>
               <div className="hoverdot1"></div>
-              <div className="hoverLine"></div>
-              <div className="hoverdot2"></div>
+              <div className="hoverTrangle"></div>
             </li>
           </ul>
         </div>
