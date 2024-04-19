@@ -2,10 +2,9 @@ import React from "react";
 import "./academices.css";
 const Academicinfo = () => {
   return (
-    <div className="AcademicDetailsection">
+    
+    <div className="PersionalDetailsection technicalDetail">
       <h1>Academic Detail</h1>
-      <hr />
-
         {/* Btech engineering academicDetail */}
       <div className="academicDetail">
         <div className="btechDegree">

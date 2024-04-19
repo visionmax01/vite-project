@@ -11,7 +11,7 @@ import "../src/Components/allbbuttoncss/btn.css"
 function App() {
   const route = createBrowserRouter([
     { path: '/', element: <Homepage /> },
-    { path: '/aboute-me', element: <Aboute /> },
+    { path: '/about-me', element: <Aboute /> },
     { path: '/my-blogs', element: <Blogs /> },
     { path: '/my-projects', element: <Projects /> },
     { path: '/my-resume', element: <Resume /> },

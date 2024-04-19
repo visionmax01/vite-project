@@ -1,35 +1,118 @@
+:root {
+    --colorWhite: white;
+    --colorlightWhite: #ffffffb6;
+    --colorBlack: #000000;
+    --colorBody: #151515;
+    --colorlightBlack: #151515;
+    --colorBlue: #003248;
+    --colorStrongBlue: #004cff;
+}
+
+.moonAnt {
+    animation: moonrotate 3s infinite ;
+
+}
+
+@keyframes moonrotate {
+    0% {
+        scale: 1;
+    }
+
+    100% {
+        scale: 1.05;
+        color: #b4c8f7;
+    }
+}
+
+.sunIcon {
+    animation: rotate360 3s infinite 0.1ms;
+}
+
+@keyframes rotate360 {
+    0% {
+        transform: rotate(0deg);
+
+    }
+
+    100% {
+        transform: rotate(360deg);
+        color: #b4c8f7;
+    }
+
+}
+
+.moonIcon {
+    font-size: 20px;
+    padding: 3px 6px;
+    cursor: pointer;
+    color: white;
+}
+
+.moonIcon:hover {
+    padding: 3px 6px;
+    cursor: pointer;
+    color: rgb(255, 149, 0);
+}
+
+/* navbar.css */
+
+/* Style for tooltip */
+button[title] {
+    content: attr(title);
+    position: absolute;
+    top: 60%;
+    background-color: #003248;
+    outline: none;
+    border-style: none;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+/* Show tooltip on hover */
+button[title]:hover {
+    visibility: visible;
+    outline: none;
+    border-style: none;
+    opacity: 1;
+}
+
 nav {
     position: fixed;
     z-index: 1100;
 }
-    /* aside menu css*/
-    .MenuSideOpen {
-        position: fixed;
-        z-index: 600;
-        top: 8%;
-        left: 0;
-        padding: 15px 0 0 0;
-        display: block;
-        width: 60vw;
-        height: 100vh;
-        background-color: var(--colorBlack);
-        transition: transform 0.3s ease;
-        transform: translateX(0);
-        border-right: 1px solid black;
-      }
-      
-      .MenuSideClosed {
-        position: fixed;
-        z-index: 600;
-        top: 8%;
-        left: 0; 
-        padding: 15px 0 0 0;
-        width: 60vw;
-        height: 100vh;
-        background-color: var(--colorBlack);
-        transition: transform 0.3s ease; 
-        transform: translateX(-100%);
-      }
+
+/* navbar.css */
+
+
+/* aside menu css*/
+.MenuSideOpen {
+    position: fixed;
+    z-index: 600;
+    top: 8%;
+    left: 0;
+    padding: 15px 0 0 0;
+    display: block;
+    width: 55vw;
+    height: 100vh;
+    background-color: black;
+    transition: transform 0.3s ease;
+    transform: translateX(0);
+    border-right: 1px solid black;
+}
+
+.MenuSideClosed {
+    position: fixed;
+    z-index: 600;
+    top: 8%;
+    left: 0;
+    padding: 15px 0 0 0;
+    width: 55vw;
+    height: 100vh;
+    background-color: Black;
+    transition: transform 0.3s ease;
+    transform: translateX(-100%);
+}
+
 .navbarSection {
     width: 100%;
     height: max-content;
@@ -40,14 +123,14 @@ nav {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    gap: 50px;
+    gap: 30px;
     padding: 0px 30px;
     box-sizing: border-box;
 }
 
 .nav-listUl li {
     list-style: none;
-    padding: 10px 0px;
+    padding: 7px 0px;
 
 }
 
@@ -55,7 +138,6 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: red;
     margin-left: 25px;
 }
 
@@ -75,6 +157,40 @@ nav {
     color: #ffa200;
 }
 
+/* navbar.css */
+.NavigationList a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    border-radius: 5px;
+    background:linear-gradient(to right, rgb(60, 255, 0) 0%, rgba(255, 0, 0, 0.893));
+    transition: width 0.3s;
+}
+
+.NavigationList a:hover::after {
+    width: 100%;
+}
+
+.nav-listUl .NavigationList.active a,
+.nav-listAside .NavigationList.active a {
+    color: #ffa200;
+}
+
+
+.nav-listUl .NavigationList a,
+.nav-listAside .NavigationList a {
+    position: relative;
+    text-decoration: none;
+}
+
+.nav-listUl .NavigationList,
+.nav-listAside .NavigationList {
+    margin-right: 20px;
+}
+
+
+
 .nav-listUl li:first-child {
     position: absolute;
     left: 0;
@@ -86,7 +202,7 @@ nav {
 }
 
 
-  
+
 
 .MenuSideOpen .mainLogo img {
     width: 250px;
@@ -97,7 +213,7 @@ nav {
     margin-bottom: 15px;
     list-style: none;
     padding: 4px 0px 4px 25px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     cursor: pointer;
     border-radius: 8px;
 }
@@ -109,8 +225,16 @@ nav {
 .nav-listAside li a {
     font-size: 1.3rem;
 }
-.MenuIcon{
+
+.MenuIcon {
     display: none;
+}
+
+
+
+/*darkmood */
+.DarkMood {
+    background-color: none;
 }
 
 @media screen and (max-width: 768px) {
@@ -132,7 +256,8 @@ nav {
 
     }
 
-    .MenuIcon,.CloseIcon {
+    .MenuIcon,
+    .CloseIcon {
         display: block;
         padding: 2px 12px;
         margin-right: 25px;
@@ -145,5 +270,5 @@ nav {
 
     }
 
-   
+
 }
