@@ -2,12 +2,16 @@
     display: flex;
     gap: 50px;
     padding: 10px 25px;
-    background-color: var(--colorBlack);
+    background-color: black;
+    color: white;
     font-size: 18px;
 }
 .footerSection a{
 color: Red;
 text-decoration: none;
+}
+.footerSection p{
+  opacity: 60%;
 }
 .footerSection a:hoVer{
     color: rgb(255, 136, 0);

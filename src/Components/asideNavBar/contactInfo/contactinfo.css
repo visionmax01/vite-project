@@ -1,6 +1,7 @@
 .ContactInfoSection{
     display: flex;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 
 }
 .containtContact{
@@ -11,10 +12,8 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-}
-.PersionalDetailsection h1{
-    font-size: 1.3rem;
-    color: var(--colorlightWhite);
+    color:white;
+
 }
 .OverViewSection{
     width: 30%;
@@ -63,22 +62,26 @@
 .UnListDetail li{
     position: relative;
     width: 100%;
-    margin-bottom: 5px;
+    margin-bottom: 15px;
     display: flex;
+
 
 }
 .UnListDetail li p{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
 }
 .titleText{
   position: relative;
   width: 25%;
-  color: antiquewhite;
+  color: var(--colorStrongBlue);
+  font-weight: 600;
 
 
 }
 .listMiddel{
  width: 5%;
+ color: var(--colorStrongBlue);
+
 }
 .listDetail{
  width: 70%;
@@ -93,7 +96,7 @@
     border-radius:0px 8px 8px 8px;
 }
 .socialMedia h1{
-    color: var(--colorlightWhite);
+    color:whitesmoke;
     font-size: 1.3rem;
 }
 .circleleft{

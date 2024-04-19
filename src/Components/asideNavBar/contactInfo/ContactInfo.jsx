@@ -5,7 +5,7 @@ const ContactInfo = () => {
   return (
     <div className="ContactInfoSection">
       <div className="containtContact">
-        <div className="PersionalDetailsection">
+        <div className="PersionalDetailsection ">
           <h1>Persional Detail</h1>
           <div className="persionalInfo">
             <div className="circleCut circleTop"><div className="insideCircle"></div></div>

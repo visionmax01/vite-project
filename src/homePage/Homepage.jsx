@@ -7,6 +7,13 @@ import Typewriter from "typewriter-effect";
 const Homepage = () => {
   const [showAllExpertise, setShowAllExpertise] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const imagesHome = [
+    "../src/img/Bhishan_sah.jpg",
+    "../src/img/1684858746747.jpg",
+    "../src/img/1684858595814.jpg",
+    "../src/img/Bhishan_sah.jpg",
+    "../src/img/1684858746747.jpg",
+  ];
   const images = [
     "../src/img/slideimage5.png",
     "../src/img/slideimage2.jpg",
@@ -15,13 +22,13 @@ const Homepage = () => {
     "../src/img/slideimage1.jpg",
   ];
   const expertiseData = [
-    { name: "HTML", percentage: 90, image: "../src/img/html5.png" },
-    { name: "CSS", percentage: 90, image: "../src/img/css.png" },
+    { name: "HTML", percentage: 100, image: "../src/img/html5.png" },
+    { name: "CSS", percentage: 98, image: "../src/img/css.png" },
     { name: "React", percentage: 90, image: "../src/img/react.png" },
-    { name: "JavaScript", percentage: 90, image: "../src/img/javascript.png" },
-    { name: "Node Js", percentage: 90, image: "../src/img/nodeJs.png" },
-    { name: "Php", percentage: 90, image: "../src/img/php.png" },
-    { name: "Laravel", percentage: 90, image: "../src/img/laravel.png" },
+    { name: "JavaScript", percentage: 85, image: "../src/img/javascript.png" },
+    { name: "Node Js", percentage: 75, image: "../src/img/nodeJs.png" },
+    { name: "Php", percentage: 75, image: "../src/img/php.png" },
+    { name: "Laravel", percentage: 80, image: "../src/img/laravel.png" },
     { name: "Express", percentage: 90, image: "../src/img/express.png" },
     // Add more expertise data as needed
   ];
@@ -47,6 +54,7 @@ const Homepage = () => {
   };
   return (
     <>
+    
       <NavBar />
       <div className="homeSection_one">
         <div className="Secton-OneLeft">
@@ -59,6 +67,7 @@ const Homepage = () => {
             >
               <div className="hero-container" data-aos="fade-in">
                 <h1>Bhishan Prasad Sah</h1>
+                <span className="Designation">Computer Engineer</span><br/>
                 <h4>
                   <span className="textIM">I'm &nbsp;</span>
                   <div className="typingEffect">
@@ -90,7 +99,17 @@ const Homepage = () => {
           <i class="fa-solid fa-headset"></i>
         </div>
         <div className="Secton-OneRight">
-          <img src="../src/img/Bhishan_sah.jpg" alt="" />
+          <div className="slideImage">
+            {imagesHome.map((imageHome, index) => (
+              <img
+                key={index}
+                src={imageHome}
+                alt={`slide-${index}`}
+                className={index === currentImageIndex ? "active" : "inactive"}
+              />
+            ))}
+          </div>
+         
         </div>
       </div>
 

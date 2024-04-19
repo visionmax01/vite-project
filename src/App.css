@@ -3,20 +3,11 @@
     padding: 0;
 }
 
-:root {
-    --colorWhite: white;
-    --colorlightWhite: #ffffffb6;
-    --colorBlack:#000000;
-    --colorBody:#151515;
-    --colorlightBlack:#151515;
-    --colorBlue:#003248;
-    --colorStrongBlue:#004cff;
-}
+    body {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        background-color: var(--colorBody);
+        color: var(--colorWhite);
+      }
 
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: var(--colorBody);
-    color: var(--colorWhite);
-}
