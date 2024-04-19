@@ -22,14 +22,14 @@ const Homepage = () => {
     "../src/img/slideimage1.jpg",
   ];
   const expertiseData = [
-    { name: "HTML", percentage: 100, image: "../src/img/html5.png" },
-    { name: "CSS", percentage: 98, image: "../src/img/css.png" },
-    { name: "React", percentage: 90, image: "../src/img/react.png" },
-    { name: "JavaScript", percentage: 85, image: "../src/img/javascript.png" },
-    { name: "Node Js", percentage: 75, image: "../src/img/nodeJs.png" },
+    { name: "HTML", percentage: 100, image: "./src/img/html5.png" },
+    { name: "CSS", percentage: 98, image: "./src/img/css.png" },
+    { name: "React", percentage: 90, image: "./src/img/react.png" },
+    { name: "JavaScript", percentage: 85, image: "./src/img/javascript.png" },
+    { name: "Node Js", percentage: 75, image: "./src/img/nodeJs.png" },
     { name: "Php", percentage: 75, image: "../src/img/php.png" },
-    { name: "Laravel", percentage: 80, image: "../src/img/laravel.png" },
-    { name: "Express", percentage: 90, image: "../src/img/express.png" },
+    { name: "Laravel", percentage: 80, image: "./src/img/laravel.png" },
+    { name: "Express", percentage: 90, image: "./src/img/express.png" },
     // Add more expertise data as needed
   ];
   useEffect(() => {

@@ -17,7 +17,6 @@ const Experiances = () => {
           </div>
       </div>
 
-
       {/* Diploma academicDetail */}
       <div className="btechDegree">
         <div className="pointcircle"></div>
