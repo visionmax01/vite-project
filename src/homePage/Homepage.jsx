@@ -21,6 +21,7 @@ const Homepage = () => {
     "../src/img/slideimage4.png",
     "../src/img/slideimage1.jpg",
   ];
+  // ffdg
   const expertiseData = [
     { name: "HTML", percentage: 100, image: "./src/img/html5.png" },
     { name: "CSS", percentage: 98, image: "./src/img/css.png" },
