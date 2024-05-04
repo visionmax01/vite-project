@@ -6,6 +6,7 @@ import AbouteInfo  from "./AbouteInfo/AbouteInfo";
 import Skillinfo from "./SkillsInfo/Skillinfo";
 import Experiances from "./Experiances/Experiances";
 import Academicinfo from "./Academicinfo/Academicinfo";
+import aboutProfile from "./1684858746747.jpg"
 const AsidenavBar = () => {
     const [selectedContent, setSelectedContent] = useState("About");
    
@@ -16,7 +17,7 @@ const AsidenavBar = () => {
     <div className="maincontainerResume">
       <aside className="sideNavBar">
         <div className="profileImage">
-          <img src="../src/img/1684858746747.jpg" alt="" />
+          <img src={aboutProfile} alt="" />
         </div>
         <div className="listItem">
           <ul>
