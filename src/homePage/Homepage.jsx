@@ -23,7 +23,7 @@ const Homepage = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const imagesHome = [
-    myImgCircle,
+    {myImgCircle},
     myImgCircle,
     myImgCircle,
     myImgCircle,
@@ -31,7 +31,7 @@ const Homepage = () => {
   ];
 
   const images = [
-    slideBsrImg1,
+    {slideBsrImg1},
     slideBsrImg2,
     slideBsrImg3,
     slideBsrImg4,
@@ -39,7 +39,7 @@ const Homepage = () => {
   ];
 
   const expertiseData = [
-    { name: "HTML", percentage: 100, image: htmlImage },
+    { name: "HTML", percentage: 100, image: {htmlImage} },
     { name: "CSS", percentage: 98, image: cssImage },
     { name: "React", percentage: 90, image: reactImage },
     { name: "JavaScript", percentage: 85, image: jsImage },
