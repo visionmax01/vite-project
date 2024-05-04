@@ -3,12 +3,13 @@ import NavBar from "../Components/NavbarMenu/Navbar";
 import Footer from "../Components/footer/Footer";
 import "./home.css";
 import Typewriter from "typewriter-effect";
-
+import myImg from "../img/1684858746747.jpg";
+import myImgCircle from "../img/1684858746747.jpg";
 const Homepage = () => {
   const [showAllExpertise, setShowAllExpertise] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imagesHome = [
-    "../src/img/Bhishan_sah.jpg",
+    {myImg},
     "../src/img/1684858746747.jpg",
     "../src/img/1684858595814.jpg",
     "../src/img/Bhishan_sah.jpg",
@@ -143,7 +144,7 @@ const Homepage = () => {
         </div>
           
           <div className="circleDiv">
-            <img src="../src/img/1684858746747.jpg" alt="" />
+            <img src={myImgCircle} alt="" />
           </div>
         </div>
 
