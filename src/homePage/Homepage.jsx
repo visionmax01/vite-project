@@ -3,34 +3,33 @@ import NavBar from "../Components/NavbarMenu/Navbar";
 import Footer from "../Components/footer/Footer";
 import "./home.css";
 import Typewriter from "typewriter-effect";
-import myImg from "../img/1684858746747.jpg";
 import myImgCircle from "../img/1684858746747.jpg";
 const Homepage = () => {
   const [showAllExpertise, setShowAllExpertise] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const imagesHome = [
-    {myImg},
-    "../src/img/1684858746747.jpg",
-    "../src/img/1684858595814.jpg",
-    "../src/img/Bhishan_sah.jpg",
-    "../src/img/1684858746747.jpg",
+    "../img/1684858746747.jpg",
+    "../img/1684858746747.jpg",
+    "../img/1684858595814.jpg",
+    "../img/Bhishan_sah.jpg",
+    "../img/1684858746747.jpg",
   ];
   const images = [
-    "../src/img/slideimage5.png",
-    "../src/img/slideimage2.jpg",
-    "../src/img/slideimage3.jpg",
-    "../src/img/slideimage4.png",
-    "../src/img/slideimage1.jpg",
+    "../img/slideimage5.png",
+    "../img/slideimage2.jpg",
+    "../img/slideimage3.jpg",
+    "../img/slideimage4.png",
+    "../img/slideimage1.jpg",
   ];
   const expertiseData = [
-    { name: "HTML", percentage: 100, image: "./src/img/html5.png" },
-    { name: "CSS", percentage: 98, image: "./src/img/css.png" },
-    { name: "React", percentage: 90, image: "./src/img/react.png" },
-    { name: "JavaScript", percentage: 85, image: "./src/img/javascript.png" },
-    { name: "Node Js", percentage: 75, image: "./src/img/nodeJs.png" },
-    { name: "Php", percentage: 75, image: "./src/img/php.png" },
-    { name: "Laravel", percentage: 80, image: "./src/img/laravel.png" },
-    { name: "Express", percentage: 90, image: "./src/img/express.png" },
+    { name: "HTML", percentage: 100, image: "../img/html5.png" },
+    { name: "CSS", percentage: 98, image: "../img/css.png" },
+    { name: "React", percentage: 90, image: "../img/react.png" },
+    { name: "JavaScript", percentage: 85, image: "../img/javascript.png" },
+    { name: "Node Js", percentage: 75, image: "../img/nodeJs.png" },
+    { name: "Php", percentage: 75, image: "../img/php.png" },
+    { name: "Laravel", percentage: 80, image: "../img/laravel.png" },
+    { name: "Express", percentage: 90, image: "../img/express.png" },
     // Add more expertise data as needed
   ];
   useEffect(() => {
